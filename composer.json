@@ -37,7 +37,11 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0",
-    "yireo/magento2-integration-test-helper": "*"
+    "yireo/magento2-integration-test-helper": "*",
+    "magento/magento-coding-standard": "^41",
+    "phpstan/phpstan": "^2.1",
+    "bitexpert/phpstan-magento": "^0.44",
+    "phpstan/extension-installer": "^1.4"
   },
   "autoload": {
     "psr-4": {
@@ -46,5 +50,11 @@
     "files": [
       "registration.php"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
+    }
   }
 }
